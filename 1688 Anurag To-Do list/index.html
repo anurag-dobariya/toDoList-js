@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+</head>
+
+<body>
+    <div class="todo-box">
+        <h1 class="todo-title">TO DO LIST</h1>
+
+        <div class="add-task">
+            <input type="hidden" id="userid" />
+            <input type="text" placeholder="Add New Task" class="task-input" id="taskAdd">
+            <input type="button" value="Add Task" title="Add Task" class="submit-task" onclick="viewData()" id="save">
+
+            <input type="button" value="Edit Task" title="Edit Task" class="submit-task" id="edit"
+                onclick="editedData()">
+        </div>
+
+        <div class="task-box">
+            <div class="mt-4">
+                <ul id="record">
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+
+</body>
+
+</html>
+
+<!-- https://codepen.io/aybukeceylan/pen/abmLNag  -->
